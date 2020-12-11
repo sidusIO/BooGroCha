@@ -19,6 +19,7 @@ func init() {
 	BgcCmd.AddCommand(commands.DeleteCmd(getBookingService))
 	BgcCmd.AddCommand(commands.ListCmd(getBookingService))
 	BgcCmd.AddCommand(commands.VersionCmd(ApplicationName, Version))
+	BgcCmd.AddCommand(commands.CompletionCmd)
 
 	loadFlags()
 
